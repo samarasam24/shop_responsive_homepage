@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+}
+.nav-bar{
+    background-color: #f8f9fa;
+    padding-top: 8px;
+}
+.nav-cont{
+    margin-left: 11.3%;   
+    display: flex;
+}
+.nav-start{
+    cursor: pointer;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+    color: black;
+    margin-right: 50px;
+    font-weight: 450;
+    margin-top: 6px;
+    letter-spacing: 0px;
+}
+.nav-home{
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+    font-size: 15px;
+    margin-right: 16px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+.nav-about{
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+    margin-top: 10px;
+    color: gray;
+}
+.nav-shop{
+    cursor: pointer;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    color: gray;
+}
+#down-arrow{
+    font-size: 15px;
+    color: gray;
+    margin-top: 13px;
+    margin-left: 2px;
+}
+.cart{
+     display: flex;
+     margin-left: 50%;
+     margin-bottom: 1%;
+     width: 110px;
+     border: 1px solid black;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 0.5px 0px 0.5px 3px;
+}
+.cart:hover{
+    background-color: black;
+    color: white;
+}
+#cart{
+    font-size: 30px;
+}
+.cart-text{
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gray;
+}
+.zero{
+    margin-top: 6px;
+    height: 18px;
+    width: 15px;
+    margin-left: 5px;
+    padding: 0px 2px 2px 2px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+.three-bar{
+    display: none;
+}
+.header{
+    background-color: rgb(36, 33, 33) ;
+    opacity: 1;
+    color: white;
+    height: 200px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 5px;
+    margin-bottom: 5%;
+}
+#head01{
+    font-size: 55px;
+    padding-bottom: 10px;
+}
+#head02{
+    color: #ffffff80;
+    font-size: 20px;
+}
+.all-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 35px;
+    justify-content: center;    
+}
+.price-tag-one{
+    width: 250px;
+    height: 380px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    overflow-y: hidden;
+    overflow-y: hidden;
+}
+.title-one{
+    margin-top: 25px;
+}
+.title-one-prt{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.title-two{
+    margin-top: 25px;
+}
+#title-two{
+    margin-top: 10px
+}
+.title-three{
+    margin-left: 80px;
+    width: 80px;
+    margin-top: 40px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px 5px;
+}
+#title-three{
+    margin-top: 25px;
+}
+.price-tag-two{
+    width: 250px;
+    height: 380px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    overflow-y: hidden;
+    overflow-y: hidden;
+}
+.del{
+    color: gray;
+}
+.page-end{
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    padding: 40px;
+}
+.positioin{
+    position: absolute;
+    left: 427.5px;
+    z-index: -1;
+}
+.sale-4{
+    background-color: black;
+    color: white;
+    width: 40px;
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.img-cont{
+    position: relative;
+}
+.para{
+    position: absolute;
+    top: 20px;
+    margin-left: 80%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+}
+
+@media only screen and (max-width:320px){
+    .nav-home{
+        display: none;
+    }
+    .nav-shop{
+        display: none;
+    }
+    .nav-about{
+        display: none;
+    }
+    #down-arrow{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+
+    .nav-cont {
+        margin-left:0px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;    
+    }
+    .three-bar{
+        display: flex;        
+        font-size: 30px;
+    }
+    .all-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 15px;
+    }
+    img{
+        width: 130px;
+        height: 100px;
+    }
+    .title-three{
+        margin-left: 18px;
+        width: 80px;
+        margin-top: 15px;
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+    .price-tag-one{
+        width: 130px;
+        height: 280px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        text-align: center;
+        overflow-y: hidden;
+        overflow-y: hidden;
+    }
+    .price-tag-two{
+        width: 130px;
+        height: 280px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        text-align: center;
+        overflow-y: hidden;
+        overflow-y: hidden;
+    }
+    .title-one-prt{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .img-cont{
+        position: relative;
+    }
+    .para{
+        position: absolute;
+        top: 20px;
+        margin-left: 70%;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+    }
+    .header{
+        padding: 20px 0px 0px 0px;
+        height: 100px;
+    }
+    #head01{
+        font-size: 24px;
+    }
+    #head02{
+        width: 200px;
+        margin-left: 60px;
+        font-size: 16px;
+    }
+    .page-end{
+        font-size: 12px;
+        margin-top: 100px;
+        padding: 40px;
+    }
+}
+@media only screen and (max-width:425px) and (min-width:321px){
+    .nav-home{
+        display: none;
+    }
+    .nav-shop{
+        display: none;
+    }
+    .nav-about{
+        display: none;
+    }
+    #down-arrow{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    .nav-cont {
+        margin-left:0px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;    
+    }
+    .three-bar{
+        display: flex;        
+        font-size: 30px;
+    }
+    .all-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 10px 0px;
+        margin-left: 6%;
+    }
+    img{
+        width: 150px;
+        height: 100px;
+    }
+    .title-three{
+        margin-left: 30px;
+        width: 80px;
+        margin-top: 15px;
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+    .price-tag-one{
+        width: 150px;
+        height: 280px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        text-align: center;
+        overflow-y: hidden;
+        overflow-y: hidden;
+    }
+    .price-tag-two{
+        width: 150px;
+        height: 280px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        text-align: center;
+        overflow-y: hidden;
+        overflow-y: hidden;
+    }
+    .header{
+        padding: 20px 0px 0px 0px;
+        height: 100px;
+    }
+    #head01{
+        font-size: 24px;
+    }
+    #head02{
+        font-size: 16px;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .page-end{
+        font-size: 10px;
+        margin-top: 100px;
+        padding: 40px;
+    }
+    .title-one-prt{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .img-cont{
+        position: relative;
+    }
+    .para{
+        position: absolute;
+        top: 20px;
+        margin-left: 70%;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+    }
+}
+ @media only screen and (max-width:768px) and (min-width:426px){
+    
+    .cart{
+        margin-left: 30%;
+    }
+    .all-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img{
+        width: 200px;
+    }
+    .price-tag-one{
+        width: 200px;
+    }
+    .price-tag-two{
+        width: 200px;
+    }
+    .title-three{
+        margin-left: 55px;
+    }
+} 
+@media only screen and (max-width:1024px) and (min-width:769px){
+    .all-container{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .cart{
+        margin-left: 40%;
+    }
+}
